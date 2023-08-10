@@ -14,6 +14,9 @@ class StartSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $this->call(PersonTypeTableSeeder::class);
+        $this->call(PersonTableSeeder::class);
+        $this->call(StoreTypeTableSeeder::class);
+        $this->call(StoreTableSeeder::class);
     }
 }
