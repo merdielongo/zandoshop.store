@@ -17,8 +17,10 @@
         "laravel/tinker": "^2.7",
         "laravel/ui": "*",
         "livewire/livewire": "^3.0@beta",
+        "pragmarx/countries-laravel": "^0.7.0",
         "simplesoftwareio/simple-qrcode": "^4.2",
         "spatie/laravel-permission": "^5.10",
+        "spatie/simple-excel": "^3.2",
         "tightenco/ziggy": "^1.0"
     },
     "require-dev": {
@@ -37,7 +39,10 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
-        }
+        },
+        "files": [
+            "app/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

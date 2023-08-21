@@ -18,5 +18,6 @@ class StartSeeder extends Seeder
         $this->call(PersonTableSeeder::class);
         $this->call(StoreTypeTableSeeder::class);
         $this->call(StoreTableSeeder::class);
+        $this->call(IdentityTableSeeder::class);
     }
 }

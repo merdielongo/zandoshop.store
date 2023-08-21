@@ -11,6 +11,11 @@ class PersonType extends Model
 {
     use HasFactory, SoftDeletes;
 
+    const MANAGER = 'manager';
+    const OWNER = 'owner';
+    const CUSTOMER = 'customer';
+    const ORGANIZATION = 'organization';
+
     protected $fillable = [
         'name'
     ];

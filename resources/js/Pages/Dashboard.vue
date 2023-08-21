@@ -1,6 +1,6 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head } from '@inertiajs/vue3';
+import { Head, Link } from '@inertiajs/vue3';
 </script>
 
 <template>
@@ -8,7 +8,7 @@ import { Head } from '@inertiajs/vue3';
 
     <AuthenticatedLayout>
         <template #header>
-            <h2 class="font-semibold text-xl text-gray-800 leading-tight">Dashboard</h2>
+            <h4 class="font-semibold text-gray-800 leading-tight">Dashboard</h4>
         </template>
 
         <div class="py-12">
@@ -48,7 +48,7 @@ import { Head } from '@inertiajs/vue3';
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 mt-8">
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6">
                     <div class="grid grid-cols-4 gap-4">
-                        <a href="#" class="bg-gray-900 text-white p-6 rounded-lg text-center uppercase text-[13px]">Ajouter un store</a>
+                        <Link :href="route('dashboard.stores.index')" class="bg-gray-900 text-white p-6 rounded-lg text-center uppercase text-[13px]">Ajouter un store</Link>
                         <a href="#" class="bg-gray-900 text-white p-6 rounded-lg text-center uppercase text-[13px]">Créer un utilisateur</a>
                         <a href="#" class="bg-gray-900 text-white p-6 rounded-lg text-center uppercase text-[13px]">Voir la liste de licenses</a>
                         <a href="#" class="bg-gray-900 text-white p-6 rounded-lg text-center uppercase text-[13px]">Lancer une publiciter</a>

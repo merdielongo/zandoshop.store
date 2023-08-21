@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use App\Models\Person;
 use App\Models\PersonType;
 use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class PersonTableSeeder extends Seeder

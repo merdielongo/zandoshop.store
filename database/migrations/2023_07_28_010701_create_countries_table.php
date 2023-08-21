@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name_fr');
             $table->string('name_en')->nullable();
             $table->string('prefix')->nullable();
-            $table->string('flag_url')->nullable();
+            $table->longText('flag_url')->nullable();
             $table->boolean('is_active')->default(false);
             $table->timestamps();
             $table->softDeletes();

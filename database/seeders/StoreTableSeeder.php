@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use App\Models\Person;
 use App\Models\Store;
 use App\Models\StoreType;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class StoreTableSeeder extends Seeder

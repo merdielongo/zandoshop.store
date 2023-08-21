@@ -37,6 +37,10 @@ Route::middleware('auth')->group(function () {
 
 require __DIR__.'/auth.php';
 
-Route::group(['middleware' => 'auth', 'prefix' => 'bko'], function () {
-    
+Route::group(['middleware' => 'auth', 'prefix' => 'dashboard'], function () {
+    Route::group(['prefix' => 'stores', 'as' => 'dashboard.stores.'], function () {
+       Route::get('/', [\App\Http\Controllers\StoreController::class, 'index'])->name('index');
+       Route::get('create', [\App\Http\Controllers\StoreController::class, 'create'])->name('create');
+       Route::post('store-with-owner', [\App\Http\Controllers\StoreController::class, 'storeWithOwner'])->name('store.withOwner');
+    });
 });
